@@ -1,17 +1,9 @@
 package com.bcit.tictactoe
 
-fun main() {
-    val board = GameBoard()
-    board.placeMark(0, 0, 'X')
-    board.placeMark(0, 1, 'X')
-    board.placeMark(0, 2, 'X')
-    board.placeMark(1, 0, 'X')
-    board.placeMark(1, 1, 'X')
-    board.placeMark(1, 2, 'X')
-    board.placeMark(2, 0, 'X')
-    board.placeMark(2, 1, 'X')
-    board.placeMark(2, 2, 'X')
-    val boardFull = board.isBoardFull()
-    println(boardFull)
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.bcit.tictactoe.databinding.ActivityMainBinding
 
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
 }
